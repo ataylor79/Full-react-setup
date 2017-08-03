@@ -1,0 +1,33 @@
+.list {
+	
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+
+	&--centered {
+		text-align: center;
+	}
+}
+
+.list__todo-list {
+
+	li {
+		text-align: left;
+		background: $light-grey;
+
+		.button__delete {
+			float: right;
+			position: relative;
+			height: 40px;
+		}
+
+		&:nth-child(2n) {
+			background: white
+		}
+
+		.todo-text {
+			display: inline-block;
+			padding: rem(10);
+		}
+	}
+}

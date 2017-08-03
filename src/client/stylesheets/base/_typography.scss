@@ -1,0 +1,14 @@
+/**
+ * Basic typography style for copy text
+ */
+body {
+  color: $text-color;
+  font: normal 125% / 1.4 $text-font-stack;
+  font-size: rem($baseFontSize);
+}
+
+h1 {
+	font-size: rem(30);
+	padding: rem(20);
+	margin: rem(10);
+}
