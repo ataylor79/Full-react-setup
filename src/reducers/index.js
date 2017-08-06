@@ -8,6 +8,7 @@ export const initialState = {
 };
 
 export const reducer = (state = initialState, action) => {
+	console.log('ACTION:', action); //eslint-disable-line
 	switch(action.type) {
 
 	case types.LOAD_TODOS:
@@ -23,11 +24,7 @@ export const reducer = (state = initialState, action) => {
 			...state,
 			todos: [
 				...state.todos,
-				{
-					id: action.id,
-					done: false,
-					name: action.name
-				}
+				{ ...action.data }
 			],
 			disabledAddTodo: true
 		};
@@ -36,21 +33,22 @@ export const reducer = (state = initialState, action) => {
 		return {
 			...state,
 			todos: [
-				...state.todos.filter(todo => todo.id !== action.id)
+				...state.todos.filter(todo => todo.id !== action.data.id)
 			],
 			deleted: [
 				...state.deleted,
-				...state.todos.filter(todo => todo.id === action.id)
+				...state.todos.filter(todo => todo.id === action.data.id)
 			],
 			disabledUndoDelete: false
 		};
 
 	case types.UNDELETE_TODO:
+		state.deleted.pop();
 		return {
 			...state,
 			todos: [
 				...state.todos,
-				state.deleted.length ? state.deleted.pop() : {}
+				{ ...action.data }
 			],
 			disabledUndoDelete: state.deleted.length === 0
 		};

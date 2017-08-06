@@ -7,7 +7,8 @@
 ### build
 * travis CI
 * styleguidist
-* Add SASS styles and build -
+* Add SASS styles and build
+* build front page
 
 
 ### functionality

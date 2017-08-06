@@ -1,8 +1,9 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const AddTodo = ({ submitTodo, undeleteTodo, inputChanged, disabledAddTodo, disabledUndoDelete }) => {
+const AddTodo = ({ deleted, submitTodo, undeleteTodo, inputChanged, disabledAddTodo, disabledUndoDelete }) => {
 	let input;
+	let lastDeleted = disabledUndoDelete ? {} : deleted[deleted.length - 1].name;
 
 	return (
 			<form onSubmit={e => {
@@ -20,7 +21,7 @@ const AddTodo = ({ submitTodo, undeleteTodo, inputChanged, disabledAddTodo, disa
 						<button disabled={disabledAddTodo} type="submit" className="todo-submit button buttom--margin">
 							Add Todo
 						</button>
-						<button disabled={disabledUndoDelete} onClick={() => undeleteTodo()} className="todo-undelete button button--margin">
+						<button disabled={disabledUndoDelete} onClick={() => undeleteTodo(lastDeleted)} className="todo-undelete button button--margin">
 							undelete Todo
 						</button>
 					</li>
@@ -34,7 +35,13 @@ AddTodo.propTypes = {
 	undeleteTodo: PropTypes.func.isRequired,
 	inputChanged: PropTypes.func.isRequired,
 	disabledAddTodo: PropTypes.bool.isRequired,
-	disabledUndoDelete: PropTypes.bool.isRequired
+	disabledUndoDelete: PropTypes.bool.isRequired,
+	deleted: PropTypes.arrayOf(PropTypes.shape(
+		{
+			id: PropTypes.string.isRequired,
+			name: PropTypes.string.isRequired
+		}
+	)).isRequired
 };
 
 export default AddTodo;

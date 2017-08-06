@@ -14,6 +14,7 @@ export const App = ({
 	deleteTodo, 
 	undeleteTodo, 
 	todos, 
+	deleted,
 	inputChanged, 
 	disabledAddTodo, 
 	disabledUndoDelete }) => (
@@ -24,7 +25,8 @@ export const App = ({
 			undeleteTodo={undeleteTodo}
 			inputChanged={inputChanged}
 			disabledAddTodo={disabledAddTodo}
-			disabledUndoDelete={disabledUndoDelete} />
+			disabledUndoDelete={disabledUndoDelete}
+			deleted={deleted} />
 		<Todolist loadTodos={loadTodos} todos={todos} deleteTodo={deleteTodo} />
 	</div>
 );
@@ -42,6 +44,12 @@ App.propTypes = {
 			id: PropTypes.string.isRequired,
 			name: PropTypes.string.isRequired
 		}
+	)).isRequired,
+	deleted: PropTypes.arrayOf(PropTypes.shape(
+		{
+			id: PropTypes.string.isRequired,
+			name: PropTypes.string.isRequired
+		}
 	)).isRequired
 };
 
@@ -52,7 +60,7 @@ const mapDispatchToProps = dispatch => ({
 	loadTodos: () => dispatch(actions.loadTodos()),
 	submitTodo: text => { if (text) { dispatch(actions.submitTodo(text)); }},
 	deleteTodo: id => dispatch(actions.deleteTodo(id)),
-	undeleteTodo: () => dispatch(actions.undeleteTodo()),
+	undeleteTodo: name => dispatch(actions.undeleteTodo(name)),
 	inputChanged: text => dispatch(actions.inputChanged(text))
 });
 

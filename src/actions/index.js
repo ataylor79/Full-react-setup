@@ -1,38 +1,47 @@
 import 'whatwg-fetch';
 import types from '../constants/';
 
-let todoId;
 const { API_URL } = process.env;
 
-const nextId = (currId = todoId) => {
-	todoId = (parseInt(currId) + 1).toString();
-	return todoId;
-};
+/**
+ * Set request headers based on method and set parameters
+ * @param  {STRING} method request method
+ * @param  {OBJECT} params body data parameters
+ * @return {OBJECT}        Object for request header
+ */
+const setHeaders = (method, params) => (Object.assign({},
+	{ method },
+	{ headers: { 'Content-Type': 'application/json' }},
+	params ? { body: JSON.stringify({ ...params }) } : {}
+));
+
+/**
+ * Generic HTTP requests
+ * @param  {STRING}   options.method request method 
+ * @param  {OBJECT}   options.params Request body data
+ * @param  {STRING}   options.id     Todo ID
+ * @param  {STRING}   type           action type
+ * @param  {FUNCTION} dispatch       redux disaptch function
+ * @return {PROMISE}                 Request Promise function
+ */
+const request = ({ method, params={}, id='' }, type, dispatch) => fetch(`${API_URL}/${id}`, setHeaders(method, params))
+		.then(resp => resp.json())
+		.then(data => dispatch({ type, data}))
+		.catch(err => console.log(err)); //eslint-disable-line 
+
 
 const actions = {
 	loadTodos() {
-		return dispatch => fetch(API_URL)
-			.then(resp => resp.json())
-			.then(data => { todoId = data.slice(-1)[0].id; return dispatch({ type: types.LOAD_TODOS, data});})
-			.catch(err => console.log(err)); //eslint-disable-line
+		return dispatch => request({ method:'GET'}, types.LOAD_TODOS, dispatch);
 	},
 	submitTodo(name) {
-		return {
-			type: types.SUBMIT_TODO,
-			id: nextId(),
-			name
-		};
+		return dispatch => request({ method: 'POST', params: { name }}, types.SUBMIT_TODO, dispatch);
 	},
 	deleteTodo(id) {
-		return {
-			type: types.DELETE_TODO,
-			id
-		};
+		return dispatch => request({ method: 'DELETE', id}, types.DELETE_TODO, dispatch);
 	},
-	undeleteTodo() {
-		return {
-			type: types.UNDELETE_TODO
-		};
+	undeleteTodo(name) {
+		return dispatch => request({ method: 'POST', params: { name }}, types.UNDELETE_TODO, dispatch);
 	},
 	inputChanged(inputText) {
 		return {
