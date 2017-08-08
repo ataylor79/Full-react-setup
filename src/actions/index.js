@@ -24,7 +24,7 @@ const setHeaders = (method, params) => (Object.assign({},
  * @param  {FUNCTION} dispatch       redux disaptch function
  * @return {PROMISE}                 Request Promise function
  */
-const request = ({ method, params={}, id='' }, type, dispatch) => fetch(`${API_URL}/${id}`, setHeaders(method, params))
+const request = ({ method, params='', id='' }, type, dispatch) => fetch(`${API_URL}/${id}`, setHeaders(method, params))
 		.then(resp => resp.json())
 		.then(data => dispatch({ type, data}))
 		.catch(err => console.log(err)); //eslint-disable-line 
