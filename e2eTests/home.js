@@ -1,7 +1,5 @@
 /* global describe, it, beforeEach*/
 
-const expect = require('chai').expect;
-
 describe('TodoList App', () => {
 	const todoTitle = 'Get better at testing';
 
@@ -13,33 +11,6 @@ describe('TodoList App', () => {
 	it('should load with the right title', function (browser) {
 		browser
 			.assert.title('Todo List')
-			.end();
-	});
-
-	it('should allow me to create a Todo', function(browser) {
-		browser
-			.setValue('.todo-input', todoTitle)
-			.click('.todo-submit')
-			.assert.containsText('.todo-text', todoTitle)
-			.end();
-	});
-
-	it('should allow me to delete todo', function(browser) {
-		browser
-			.setValue('.todo-input', todoTitle)
-			.click('.todo-submit')
-			.click('.todo-delete')
-			.assert.elementNotPresent('.todo-text')
-			.end();
-	});
-
-	it('should allow me to undo a delete', function(browser) {
-		browser
-			.setValue('.todo-input', todoTitle)
-			.click('.todo-submit')
-			.click('.todo-delete')
-			.click('.todo-undelete')
-			.assert.containsText('.todo-text', todoTitle)
 			.end();
 	});
 
@@ -62,11 +33,45 @@ describe('TodoList App', () => {
 		browser.end();
 	});
 
+	it('should allow me to create a Todo', function(browser) {
+		browser
+			.setValue('.todo-input', todoTitle)
+			.submitForm('form.todo-form')
+			.pause(500)
+			.assert.containsText('.list__todo-list li:last-child .todo-text', todoTitle)
+			.end();
+	});
+
+	it('should allow me to delete todo', function(browser) {
+		browser
+			.setValue('.todo-input', todoTitle)
+			.submitForm('form.todo-form')
+			.pause(500)
+			.getAttribute('.list__todo-list li:last-child', 'id', function(res) {
+				this.click('.list__todo-list li#' + res.value + ' .todo-delete') 
+				.assert.elementNotPresent('.list__todo-list li#' + res.value + '.todo-text')
+				.end();
+			});
+	});
+
+	it('should allow me to undo a delete', function(browser) {
+		browser
+			.setValue('.todo-input', todoTitle)
+			.submitForm('form.todo-form')
+			.pause(500)
+			.click('.todo-delete')
+			.click('.todo-undelete')
+			.assert.containsText('.list__todo-list li:last-child .todo-text', todoTitle)
+			.end();
+	});
+
 	it('should enable the undo delete button when there are deleted todos', function(browser) {
 		browser
 			.setValue('.todo-input', todoTitle)
-			.click('.todo-submit')
+			.submitForm('form.todo-form')
+			.pause(500)
 			.click('.todo-delete')
+			.pause(500)
 			.expect.element('.todo-undelete').to.be.enabled;
 		browser.end();
 	});

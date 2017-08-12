@@ -7,36 +7,34 @@
   "globals_path" : "",
 
   "selenium" : {
-    "start_process" : false,
-    "server_path" : "",
-    "log_path" : "",
-    "port" : 4444,
+    "start_process" : true,
+    "server_path" : "./node_modules/selenium-standalone/.selenium/selenium-server/3.4.0-server.jar",
+    "log_path" : "./testReports",
+    "host": "127.0.0.1",
+    "port" : 4447,
     "cli_args" : {
-      "webdriver.chrome.driver" : "",
-      "webdriver.gecko.driver" : "",
-      "webdriver.edge.driver" : ""
+      "webdriver.chrome.driver": "./node_modules/selenium-standalone/.selenium/chromedriver/2.30-x64-chromedriver"
     }
   },
   "test_runner" : {
     "type" : "mocha",
     "options" : {
       "ui" : "bdd",
-      "reporter" : "dot"
+      "reporter" : "list"
     }
   },
   "test_settings" : {
     "default" : {
       "launch_url" : "http://localhost",
-      "selenium_port"  : 4444,
+      "selenium_port"  : 4447,
       "selenium_host"  : "localhost",
       "silent": true,
-      "screenshots" : {
+      "screenshots": {
         "enabled" : false,
         "path" : "./errorShots"
       },
       "desiredCapabilities": {
-        "browserName": "chrome",
-        "marionette": true
+        "browserName": "chrome"
       }
     },
     "chrome" : {

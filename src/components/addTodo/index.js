@@ -6,7 +6,7 @@ const AddTodo = ({ deleted, submitTodo, undeleteTodo, inputChanged, disabledAddT
 	let lastDeleted = disabledUndoDelete ? {} : deleted[deleted.length - 1].name;
 
 	return (
-			<form onSubmit={e => {
+			<form className="todo-form" onSubmit={e => {
 				e.preventDefault();
 				if(!disabledAddTodo) {
 					submitTodo(input.value);

@@ -26,7 +26,7 @@ const setHeaders = (method, params) => (Object.assign({},
  */
 const request = ({ method, params='', id='' }, type, dispatch) => fetch(`${API_URL}/${id}`, setHeaders(method, params))
 		.then(resp => resp.json())
-		.then(data => dispatch({ type, data}))
+		.then(data => dispatch({ type, data})) 
 		.catch(err => console.log(err)); //eslint-disable-line 
 
 

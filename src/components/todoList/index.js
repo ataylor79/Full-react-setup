@@ -10,8 +10,11 @@ class TodoList extends React.Component {
 	}
 
 	render() {
-		const todoItems = this.props.todos.map(todo => (
-			<li key={todo.id}>
+		const todoItems = this.props.todos.map(todo => {
+			const todoId = `todo-${todo.id}`;
+
+			return (
+			<li id={todoId} key={todo.id}>
 				<button 
 				type='button' 
 				className='todo-delete button button__delete'
@@ -19,7 +22,8 @@ class TodoList extends React.Component {
 				> Delete </button>
 				<div className="todo-text">{todo.name}</div>
 			</li>
-		));
+			);
+		});
 
 		return (
 			<ul className="list list--centered list__todo-list">

@@ -54,9 +54,7 @@
     "build": "node scripts/build.js",
     "test": "node scripts/test.js --env=jsdom",
     "test:coverage": "npm test -- --coverage",
-    "selenium-setup": "selenium-standalone install",
-    "selenium-start": "selenium-standalone start",
-    "e2e-tests": "concurrently --kill-others-on-fail --names \" SELENIUM , NIGHTWATCH \" -c \"bgRed.bold,bgGreen.bold\" --prefix \"{name}\" \"npm run selenium-start\" \"nightwatch\""
+    "e2e-tests": "NODE_ENV=development nightwatch"
   },
   "devDependencies": {
     "chai": "^4.1.0",
