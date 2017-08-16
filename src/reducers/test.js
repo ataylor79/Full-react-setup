@@ -14,9 +14,10 @@ describe.only('reducer', () => {
 		it('should return the correct state', () => {
 			const action = {
 				type: types.SUBMIT_TODO,
-				id: 1,
-				text: todoText
-			};
+				data: {
+					id: 1,
+					text: todoText
+				}};
 
 			const expectedState = {
 				todos: [{
@@ -36,7 +37,7 @@ describe.only('reducer', () => {
 		it('should return the correct state', () => {
 			const action = {
 				type: types.DELETE_TODO,
-				id: 1
+				data: { id: 1 }
 			};
 
 			const state = {
@@ -66,7 +67,11 @@ describe.only('reducer', () => {
 	describe('undelete todo', () => {
 		it('should return the correct state', () => {
 			const action = {
-				type: types.UNDELETE_TODO
+				type: types.UNDELETE_TODO,
+				data: {
+					id: 2,
+					text: todoText
+				}
 			};
 
 			const state = {

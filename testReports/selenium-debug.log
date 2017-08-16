@@ -1,0 +1,321 @@
+21:35:33.508 INFO - Selenium build info: version: '3.4.0', revision: 'unknown'
+21:35:33.509 INFO - Launching a standalone Selenium Server
+2017-08-16 21:35:33.526:INFO::main: Logging initialized @274ms to org.seleniumhq.jetty9.util.log.StdErrLog
+21:35:33.574 INFO - Driver provider org.openqa.selenium.ie.InternetExplorerDriver registration is skipped:
+ registration capabilities Capabilities [{ensureCleanSession=true, browserName=internet explorer, version=, platform=WINDOWS}] does not match the current platform LINUX
+21:35:33.575 INFO - Driver provider org.openqa.selenium.edge.EdgeDriver registration is skipped:
+ registration capabilities Capabilities [{browserName=MicrosoftEdge, version=, platform=WINDOWS}] does not match the current platform LINUX
+21:35:33.575 INFO - Driver class not found: com.opera.core.systems.OperaDriver
+21:35:33.575 INFO - Driver provider com.opera.core.systems.OperaDriver registration is skipped:
+Unable to create new instances on this machine.
+21:35:33.575 INFO - Driver class not found: com.opera.core.systems.OperaDriver
+21:35:33.575 INFO - Driver provider com.opera.core.systems.OperaDriver is not registered
+21:35:33.576 INFO - Driver provider org.openqa.selenium.safari.SafariDriver registration is skipped:
+ registration capabilities Capabilities [{browserName=safari, version=, platform=MAC}] does not match the current platform LINUX
+2017-08-16 21:35:33.614:INFO:osjs.Server:main: jetty-9.4.3.v20170317
+2017-08-16 21:35:33.654:INFO:osjsh.ContextHandler:main: Started o.s.j.s.ServletContextHandler@28d25987{/,null,AVAILABLE}
+2017-08-16 21:35:33.671:INFO:osjs.AbstractConnector:main: Started ServerConnector@270adadb{HTTP/1.1,[http/1.1]}{0.0.0.0:4444}
+2017-08-16 21:35:33.672:INFO:osjs.Server:main: Started @420ms
+21:35:33.672 INFO - Selenium Server is up and running
+21:35:33.981 INFO - SessionCleaner initialized with insideBrowserTimeout 0 and clientGoneTimeout 1800000 polling every 180000
+21:35:34.007 INFO - Executing: [new session: Capabilities [{acceptSslCerts=true, browserName=chrome, javascriptEnabled=true, platform=ANY}]])
+21:35:34.038 INFO - Creating a new session for Capabilities [{acceptSslCerts=true, browserName=chrome, javascriptEnabled=true, platform=ANY}]
+Starting ChromeDriver 2.31.488763 (092de99f48a300323ecf8c2a4e2e7cab51de5ba8) on port 9679
+Only local connections are allowed.
+21:35:35.456 INFO - Detected dialect: OSS
+21:35:35.477 INFO - Done: [new session: Capabilities [{acceptSslCerts=true, browserName=chrome, javascriptEnabled=true, platform=ANY}]]
+21:35:35.504 INFO - Executing: [get: http://localhost:3000])
+21:35:35.906 INFO - Done: [get: http://localhost:3000]
+21:35:35.917 INFO - Executing: [get title])
+21:35:35.932 INFO - Done: [get title]
+21:35:35.941 INFO - Executing: [delete session: 945e21b6-0af9-4fca-93ce-0a51eec07be5])
+21:35:36.012 INFO - Done: [delete session: 945e21b6-0af9-4fca-93ce-0a51eec07be5]
+21:35:36.030 INFO - Executing: [new session: Capabilities [{acceptSslCerts=true, browserName=chrome, javascriptEnabled=true, platform=ANY}]])
+21:35:36.031 INFO - Creating a new session for Capabilities [{acceptSslCerts=true, browserName=chrome, javascriptEnabled=true, platform=ANY}]
+Starting ChromeDriver 2.31.488763 (092de99f48a300323ecf8c2a4e2e7cab51de5ba8) on port 17838
+Only local connections are allowed.
+21:35:37.124 INFO - Detected dialect: OSS
+21:35:37.129 INFO - Done: [new session: Capabilities [{acceptSslCerts=true, browserName=chrome, javascriptEnabled=true, platform=ANY}]]
+21:35:37.136 INFO - Executing: [get: http://localhost:3000])
+21:35:37.534 INFO - Done: [get: http://localhost:3000]
+21:35:37.541 INFO - Executing: [find elements: By.cssSelector: .todo-submit])
+21:35:37.590 INFO - Done: [find elements: By.cssSelector: .todo-submit]
+21:35:37.596 INFO - Executing: [is enabled: 0 [[ChromeDriver: chrome on LINUX (c0cfceeec91b737e403e69825b52e3cb)] -> css selector: .todo-submit]])
+21:35:37.620 INFO - Done: [is enabled: 0 [[ChromeDriver: chrome on LINUX (c0cfceeec91b737e403e69825b52e3cb)] -> css selector: .todo-submit]]
+21:35:37.625 INFO - Executing: [delete session: 2da12f47-3f5a-4ff9-81b9-17e9a98dc972])
+21:35:37.691 INFO - Done: [delete session: 2da12f47-3f5a-4ff9-81b9-17e9a98dc972]
+21:35:37.703 INFO - Executing: [new session: Capabilities [{acceptSslCerts=true, browserName=chrome, javascriptEnabled=true, platform=ANY}]])
+21:35:37.704 INFO - Creating a new session for Capabilities [{acceptSslCerts=true, browserName=chrome, javascriptEnabled=true, platform=ANY}]
+Starting ChromeDriver 2.31.488763 (092de99f48a300323ecf8c2a4e2e7cab51de5ba8) on port 23049
+Only local connections are allowed.
+21:35:38.734 INFO - Detected dialect: OSS
+21:35:38.737 INFO - Done: [new session: Capabilities [{acceptSslCerts=true, browserName=chrome, javascriptEnabled=true, platform=ANY}]]
+21:35:38.744 INFO - Executing: [get: http://localhost:3000])
+21:35:39.141 INFO - Done: [get: http://localhost:3000]
+21:35:39.154 INFO - Executing: [find element: By.cssSelector: .todo-input])
+21:35:39.192 INFO - Done: [find element: By.cssSelector: .todo-input]
+21:35:39.197 INFO - Executing: [send keys: 0 [[ChromeDriver: chrome on LINUX (a2b97049b2884ce2436ad7f7b3dd5613)] -> css selector: .todo-input], [G, e, t,  , b, e, t, t, e, r,  , a, t,  , t, e, s, t, i, n, g]])
+21:35:39.450 INFO - Done: [send keys: 0 [[ChromeDriver: chrome on LINUX (a2b97049b2884ce2436ad7f7b3dd5613)] -> css selector: .todo-input], [G, e, t,  , b, e, t, t, e, r,  , a, t,  , t, e, s, t, i, n, g]]
+21:35:39.456 INFO - Executing: [find elements: By.cssSelector: .todo-submit])
+21:35:39.490 INFO - Done: [find elements: By.cssSelector: .todo-submit]
+21:35:39.495 INFO - Executing: [is enabled: 1 [[ChromeDriver: chrome on LINUX (a2b97049b2884ce2436ad7f7b3dd5613)] -> css selector: .todo-submit]])
+21:35:39.515 INFO - Done: [is enabled: 1 [[ChromeDriver: chrome on LINUX (a2b97049b2884ce2436ad7f7b3dd5613)] -> css selector: .todo-submit]]
+21:35:39.524 INFO - Executing: [delete session: bb9d3ac1-b745-4361-b9ed-c2e38bd08883])
+21:35:39.592 INFO - Done: [delete session: bb9d3ac1-b745-4361-b9ed-c2e38bd08883]
+21:35:39.602 INFO - Executing: [new session: Capabilities [{acceptSslCerts=true, browserName=chrome, javascriptEnabled=true, platform=ANY}]])
+21:35:39.604 INFO - Creating a new session for Capabilities [{acceptSslCerts=true, browserName=chrome, javascriptEnabled=true, platform=ANY}]
+Starting ChromeDriver 2.31.488763 (092de99f48a300323ecf8c2a4e2e7cab51de5ba8) on port 8092
+Only local connections are allowed.
+21:35:40.636 INFO - Detected dialect: OSS
+21:35:40.638 INFO - Done: [new session: Capabilities [{acceptSslCerts=true, browserName=chrome, javascriptEnabled=true, platform=ANY}]]
+21:35:40.647 INFO - Executing: [get: http://localhost:3000])
+21:35:41.043 INFO - Done: [get: http://localhost:3000]
+21:35:41.053 INFO - Executing: [find elements: By.cssSelector: .todo-undelete])
+21:35:41.090 INFO - Done: [find elements: By.cssSelector: .todo-undelete]
+21:35:41.093 INFO - Executing: [is enabled: 0 [[ChromeDriver: chrome on LINUX (e12d037719df4d485f3162251436aed8)] -> css selector: .todo-undelete]])
+21:35:41.114 INFO - Done: [is enabled: 0 [[ChromeDriver: chrome on LINUX (e12d037719df4d485f3162251436aed8)] -> css selector: .todo-undelete]]
+21:35:41.119 INFO - Executing: [delete session: 2540eb11-d095-47f2-b9a0-c3f760d89bfc])
+21:35:41.186 INFO - Done: [delete session: 2540eb11-d095-47f2-b9a0-c3f760d89bfc]
+21:35:41.197 INFO - Executing: [new session: Capabilities [{acceptSslCerts=true, browserName=chrome, javascriptEnabled=true, platform=ANY}]])
+21:35:41.198 INFO - Creating a new session for Capabilities [{acceptSslCerts=true, browserName=chrome, javascriptEnabled=true, platform=ANY}]
+Starting ChromeDriver 2.31.488763 (092de99f48a300323ecf8c2a4e2e7cab51de5ba8) on port 22124
+Only local connections are allowed.
+21:35:42.212 INFO - Detected dialect: OSS
+21:35:42.214 INFO - Done: [new session: Capabilities [{acceptSslCerts=true, browserName=chrome, javascriptEnabled=true, platform=ANY}]]
+21:35:42.219 INFO - Executing: [get: http://localhost:3000])
+21:35:42.628 INFO - Done: [get: http://localhost:3000]
+21:35:42.635 INFO - Executing: [find element: By.cssSelector: .todo-input])
+21:35:42.668 INFO - Done: [find element: By.cssSelector: .todo-input]
+21:35:42.673 INFO - Executing: [send keys: 0 [[ChromeDriver: chrome on LINUX (5d7df5cca4f7836980cf6b3a166b04b1)] -> css selector: .todo-input], [G, e, t,  , b, e, t, t, e, r,  , a, t,  , t, e, s, t, i, n, g]])
+21:35:42.936 INFO - Done: [send keys: 0 [[ChromeDriver: chrome on LINUX (5d7df5cca4f7836980cf6b3a166b04b1)] -> css selector: .todo-input], [G, e, t,  , b, e, t, t, e, r,  , a, t,  , t, e, s, t, i, n, g]]
+21:35:42.942 INFO - Executing: [find element: By.cssSelector: form.todo-form])
+21:35:42.973 INFO - Done: [find element: By.cssSelector: form.todo-form]
+21:35:42.980 INFO - Executing: [submit: 1 [[ChromeDriver: chrome on LINUX (5d7df5cca4f7836980cf6b3a166b04b1)] -> css selector: form.todo-form]])
+21:35:43.008 INFO - Done: [submit: 1 [[ChromeDriver: chrome on LINUX (5d7df5cca4f7836980cf6b3a166b04b1)] -> css selector: form.todo-form]]
+21:35:43.524 INFO - Executing: [find element: By.cssSelector: .list__todo-list li:last-child .todo-text])
+21:35:43.550 INFO - Done: [find element: By.cssSelector: .list__todo-list li:last-child .todo-text]
+21:35:43.558 INFO - Executing: [get text: 2 [[ChromeDriver: chrome on LINUX (5d7df5cca4f7836980cf6b3a166b04b1)] -> css selector: .list__todo-list li:last-child .todo-text]])
+21:35:43.592 INFO - Done: [get text: 2 [[ChromeDriver: chrome on LINUX (5d7df5cca4f7836980cf6b3a166b04b1)] -> css selector: .list__todo-list li:last-child .todo-text]]
+21:35:43.597 INFO - Executing: [delete session: 24a64f0f-f149-461f-88ca-b5b97b4a5fd1])
+21:35:43.664 INFO - Done: [delete session: 24a64f0f-f149-461f-88ca-b5b97b4a5fd1]
+21:35:43.672 INFO - Executing: [new session: Capabilities [{acceptSslCerts=true, browserName=chrome, javascriptEnabled=true, platform=ANY}]])
+21:35:43.673 INFO - Creating a new session for Capabilities [{acceptSslCerts=true, browserName=chrome, javascriptEnabled=true, platform=ANY}]
+Starting ChromeDriver 2.31.488763 (092de99f48a300323ecf8c2a4e2e7cab51de5ba8) on port 1034
+Only local connections are allowed.
+21:35:44.756 INFO - Detected dialect: OSS
+21:35:44.759 INFO - Done: [new session: Capabilities [{acceptSslCerts=true, browserName=chrome, javascriptEnabled=true, platform=ANY}]]
+21:35:44.763 INFO - Executing: [get: http://localhost:3000])
+21:35:45.182 INFO - Done: [get: http://localhost:3000]
+21:35:45.187 INFO - Executing: [find element: By.cssSelector: .todo-input])
+21:35:45.222 INFO - Done: [find element: By.cssSelector: .todo-input]
+21:35:45.227 INFO - Executing: [send keys: 0 [[ChromeDriver: chrome on LINUX (aa7d264801f66df4351c56d5734f7c24)] -> css selector: .todo-input], [G, e, t,  , b, e, t, t, e, r,  , a, t,  , t, e, s, t, i, n, g]])
+21:35:45.451 INFO - Done: [send keys: 0 [[ChromeDriver: chrome on LINUX (aa7d264801f66df4351c56d5734f7c24)] -> css selector: .todo-input], [G, e, t,  , b, e, t, t, e, r,  , a, t,  , t, e, s, t, i, n, g]]
+21:35:45.455 INFO - Executing: [find element: By.cssSelector: form.todo-form])
+21:35:45.484 INFO - Done: [find element: By.cssSelector: form.todo-form]
+21:35:45.489 INFO - Executing: [submit: 1 [[ChromeDriver: chrome on LINUX (aa7d264801f66df4351c56d5734f7c24)] -> css selector: form.todo-form]])
+21:35:45.516 INFO - Done: [submit: 1 [[ChromeDriver: chrome on LINUX (aa7d264801f66df4351c56d5734f7c24)] -> css selector: form.todo-form]]
+21:35:46.030 INFO - Executing: [find element: By.cssSelector: .list__todo-list li:last-child])
+21:35:46.902 WARN - Exception thrown
+org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":".list__todo-list li:last-child"}
+  (Session info: chrome=60.0.3112.90)
+  (Driver info: chromedriver=2.31.488763 (092de99f48a300323ecf8c2a4e2e7cab51de5ba8),platform=Linux 4.10.0-30-generic x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 39 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.4.0', revision: 'unknown', time: 'unknown'
+System info: host: 'alec-ThinkPad-X220', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '4.10.0-30-generic', java.version: '1.8.0_131'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.31.488763 (092de99f48a300323ecf8c2a4e2e7cab51de5ba8), userDataDir=/tmp/.org.chromium.Chromium.Tcmpqj}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=60.0.3112.90, platform=LINUX, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=}]
+Session ID: aa7d264801f66df4351c56d5734f7c24
+*** Element info: {Using=css selector, value=.list__todo-list li:last-child}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:215)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:167)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:671)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:410)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByCssSelector(RemoteWebDriver.java:501)
+	at org.openqa.selenium.By$ByCssSelector.findElement(By.java:430)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:402)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$2.invoke(EventFiringWebDriver.java:104)
+	at com.sun.proxy.$Proxy4.findElement(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.findElement(EventFiringWebDriver.java:188)
+	at org.openqa.selenium.remote.server.handler.FindElement.call(FindElement.java:48)
+	at org.openqa.selenium.remote.server.handler.FindElement.call(FindElement.java:33)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at org.openqa.selenium.remote.server.DefaultSession$1.run(DefaultSession.java:176)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+21:35:46.905 WARN - Exception: no such element: Unable to locate element: {"method":"css selector","selector":".list__todo-list li:last-child"}
+  (Session info: chrome=60.0.3112.90)
+  (Driver info: chromedriver=2.31.488763 (092de99f48a300323ecf8c2a4e2e7cab51de5ba8),platform=Linux 4.10.0-30-generic x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 39 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.4.0', revision: 'unknown', time: 'unknown'
+System info: host: 'alec-ThinkPad-X220', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '4.10.0-30-generic', java.version: '1.8.0_131'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.31.488763 (092de99f48a300323ecf8c2a4e2e7cab51de5ba8), userDataDir=/tmp/.org.chromium.Chromium.Tcmpqj}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=60.0.3112.90, platform=LINUX, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=}]
+Session ID: aa7d264801f66df4351c56d5734f7c24
+*** Element info: {Using=css selector, value=.list__todo-list li:last-child}
+21:35:46.980 INFO - Executing: [find element: By.cssSelector: .list__todo-list li#[object Object] .todo-delete])
+21:35:47.664 WARN - Exception thrown
+org.openqa.selenium.InvalidSelectorException: invalid selector: An invalid or illegal selector was specified
+  (Session info: chrome=60.0.3112.90)
+  (Driver info: chromedriver=2.31.488763 (092de99f48a300323ecf8c2a4e2e7cab51de5ba8),platform=Linux 4.10.0-30-generic x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 30 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/invalid_selector_exception.html
+Build info: version: '3.4.0', revision: 'unknown', time: 'unknown'
+System info: host: 'alec-ThinkPad-X220', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '4.10.0-30-generic', java.version: '1.8.0_131'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.31.488763 (092de99f48a300323ecf8c2a4e2e7cab51de5ba8), userDataDir=/tmp/.org.chromium.Chromium.Tcmpqj}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=60.0.3112.90, platform=LINUX, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=}]
+Session ID: aa7d264801f66df4351c56d5734f7c24
+*** Element info: {Using=css selector, value=.list__todo-list li#[object Object] .todo-delete}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:215)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:167)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:671)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:410)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByCssSelector(RemoteWebDriver.java:501)
+	at org.openqa.selenium.By$ByCssSelector.findElement(By.java:430)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:402)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$2.invoke(EventFiringWebDriver.java:104)
+	at com.sun.proxy.$Proxy4.findElement(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.findElement(EventFiringWebDriver.java:188)
+	at org.openqa.selenium.remote.server.handler.FindElement.call(FindElement.java:48)
+	at org.openqa.selenium.remote.server.handler.FindElement.call(FindElement.java:33)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at org.openqa.selenium.remote.server.DefaultSession$1.run(DefaultSession.java:176)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+21:35:47.666 WARN - Exception: invalid selector: An invalid or illegal selector was specified
+  (Session info: chrome=60.0.3112.90)
+  (Driver info: chromedriver=2.31.488763 (092de99f48a300323ecf8c2a4e2e7cab51de5ba8),platform=Linux 4.10.0-30-generic x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 30 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/invalid_selector_exception.html
+Build info: version: '3.4.0', revision: 'unknown', time: 'unknown'
+System info: host: 'alec-ThinkPad-X220', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '4.10.0-30-generic', java.version: '1.8.0_131'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.31.488763 (092de99f48a300323ecf8c2a4e2e7cab51de5ba8), userDataDir=/tmp/.org.chromium.Chromium.Tcmpqj}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=60.0.3112.90, platform=LINUX, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=}]
+Session ID: aa7d264801f66df4351c56d5734f7c24
+*** Element info: {Using=css selector, value=.list__todo-list li#[object Object] .todo-delete}
+21:35:47.728 INFO - Executing: [find elements: By.cssSelector: .list__todo-list li#[object Object].todo-text])
+21:35:48.330 WARN - Exception thrown
+org.openqa.selenium.InvalidSelectorException: invalid selector: An invalid or illegal selector was specified
+  (Session info: chrome=60.0.3112.90)
+  (Driver info: chromedriver=2.31.488763 (092de99f48a300323ecf8c2a4e2e7cab51de5ba8),platform=Linux 4.10.0-30-generic x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 31 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/invalid_selector_exception.html
+Build info: version: '3.4.0', revision: 'unknown', time: 'unknown'
+System info: host: 'alec-ThinkPad-X220', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '4.10.0-30-generic', java.version: '1.8.0_131'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.31.488763 (092de99f48a300323ecf8c2a4e2e7cab51de5ba8), userDataDir=/tmp/.org.chromium.Chromium.Tcmpqj}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=60.0.3112.90, platform=LINUX, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=}]
+Session ID: aa7d264801f66df4351c56d5734f7c24
+*** Element info: {Using=css selector, value=.list__todo-list li#[object Object].todo-text}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:215)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:167)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:671)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:437)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementsByCssSelector(RemoteWebDriver.java:505)
+	at org.openqa.selenium.By$ByCssSelector.findElements(By.java:441)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:398)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$2.invoke(EventFiringWebDriver.java:104)
+	at com.sun.proxy.$Proxy4.findElements(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.findElements(EventFiringWebDriver.java:177)
+	at org.openqa.selenium.remote.server.handler.FindElements.call(FindElements.java:50)
+	at org.openqa.selenium.remote.server.handler.FindElements.call(FindElements.java:35)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at org.openqa.selenium.remote.server.DefaultSession$1.run(DefaultSession.java:176)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+21:35:48.331 WARN - Exception: invalid selector: An invalid or illegal selector was specified
+  (Session info: chrome=60.0.3112.90)
+  (Driver info: chromedriver=2.31.488763 (092de99f48a300323ecf8c2a4e2e7cab51de5ba8),platform=Linux 4.10.0-30-generic x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 31 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/invalid_selector_exception.html
+Build info: version: '3.4.0', revision: 'unknown', time: 'unknown'
+System info: host: 'alec-ThinkPad-X220', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '4.10.0-30-generic', java.version: '1.8.0_131'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.31.488763 (092de99f48a300323ecf8c2a4e2e7cab51de5ba8), userDataDir=/tmp/.org.chromium.Chromium.Tcmpqj}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=60.0.3112.90, platform=LINUX, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=}]
+Session ID: aa7d264801f66df4351c56d5734f7c24
+*** Element info: {Using=css selector, value=.list__todo-list li#[object Object].todo-text}
+21:35:48.377 INFO - Executing: [delete session: 9b3e574b-61f8-46ee-8e9c-d15bb213adc0])
+21:35:48.444 INFO - Done: [delete session: 9b3e574b-61f8-46ee-8e9c-d15bb213adc0]
+21:35:48.451 INFO - Executing: [new session: Capabilities [{acceptSslCerts=true, browserName=chrome, javascriptEnabled=true, platform=ANY}]])
+21:35:48.452 INFO - Creating a new session for Capabilities [{acceptSslCerts=true, browserName=chrome, javascriptEnabled=true, platform=ANY}]
+Starting ChromeDriver 2.31.488763 (092de99f48a300323ecf8c2a4e2e7cab51de5ba8) on port 31340
+Only local connections are allowed.
+21:35:49.516 INFO - Detected dialect: OSS
+21:35:49.517 INFO - Done: [new session: Capabilities [{acceptSslCerts=true, browserName=chrome, javascriptEnabled=true, platform=ANY}]]
+21:35:49.527 INFO - Executing: [get: http://localhost:3000])
+21:35:49.957 INFO - Done: [get: http://localhost:3000]
+21:35:49.962 INFO - Executing: [find element: By.cssSelector: .todo-input])
+21:35:49.993 INFO - Done: [find element: By.cssSelector: .todo-input]
+21:35:49.999 INFO - Executing: [send keys: 0 [[ChromeDriver: chrome on LINUX (24bf3a7f272cb47d947375d2df0e5dca)] -> css selector: .todo-input], [G, e, t,  , b, e, t, t, e, r,  , a, t,  , t, e, s, t, i, n, g]])
+21:35:50.281 INFO - Done: [send keys: 0 [[ChromeDriver: chrome on LINUX (24bf3a7f272cb47d947375d2df0e5dca)] -> css selector: .todo-input], [G, e, t,  , b, e, t, t, e, r,  , a, t,  , t, e, s, t, i, n, g]]
+21:35:50.290 INFO - Executing: [find element: By.cssSelector: form.todo-form])
+21:35:50.317 INFO - Done: [find element: By.cssSelector: form.todo-form]
+21:35:50.320 INFO - Executing: [submit: 1 [[ChromeDriver: chrome on LINUX (24bf3a7f272cb47d947375d2df0e5dca)] -> css selector: form.todo-form]])
+21:35:50.349 INFO - Done: [submit: 1 [[ChromeDriver: chrome on LINUX (24bf3a7f272cb47d947375d2df0e5dca)] -> css selector: form.todo-form]]
+21:35:50.858 INFO - Executing: [find element: By.cssSelector: .todo-delete])
+21:35:50.889 INFO - Done: [find element: By.cssSelector: .todo-delete]
+21:35:50.893 INFO - Executing: [click: 2 [[ChromeDriver: chrome on LINUX (24bf3a7f272cb47d947375d2df0e5dca)] -> css selector: .todo-delete]])
+21:35:50.971 INFO - Done: [click: 2 [[ChromeDriver: chrome on LINUX (24bf3a7f272cb47d947375d2df0e5dca)] -> css selector: .todo-delete]]
+21:35:50.977 INFO - Executing: [find element: By.cssSelector: .todo-undelete])
+21:35:51.012 INFO - Done: [find element: By.cssSelector: .todo-undelete]
+21:35:51.016 INFO - Executing: [click: 3 [[ChromeDriver: chrome on LINUX (24bf3a7f272cb47d947375d2df0e5dca)] -> css selector: .todo-undelete]])
+21:35:51.092 INFO - Done: [click: 3 [[ChromeDriver: chrome on LINUX (24bf3a7f272cb47d947375d2df0e5dca)] -> css selector: .todo-undelete]]
+21:35:51.099 INFO - Executing: [find element: By.cssSelector: .list__todo-list li:last-child .todo-text])
+21:35:51.127 INFO - Done: [find element: By.cssSelector: .list__todo-list li:last-child .todo-text]
+21:35:51.137 INFO - Executing: [get text: 4 [[ChromeDriver: chrome on LINUX (24bf3a7f272cb47d947375d2df0e5dca)] -> css selector: .list__todo-list li:last-child .todo-text]])
+21:35:51.172 INFO - Done: [get text: 4 [[ChromeDriver: chrome on LINUX (24bf3a7f272cb47d947375d2df0e5dca)] -> css selector: .list__todo-list li:last-child .todo-text]]
+21:35:51.176 INFO - Executing: [delete session: c4aec983-218c-4224-a89d-b916c218e9ce])
+21:35:51.246 INFO - Done: [delete session: c4aec983-218c-4224-a89d-b916c218e9ce]
+21:35:51.253 INFO - Executing: [new session: Capabilities [{acceptSslCerts=true, browserName=chrome, javascriptEnabled=true, platform=ANY}]])
+21:35:51.254 INFO - Creating a new session for Capabilities [{acceptSslCerts=true, browserName=chrome, javascriptEnabled=true, platform=ANY}]
+Starting ChromeDriver 2.31.488763 (092de99f48a300323ecf8c2a4e2e7cab51de5ba8) on port 15766
+Only local connections are allowed.
+21:35:52.342 INFO - Detected dialect: OSS
+21:35:52.347 INFO - Done: [new session: Capabilities [{acceptSslCerts=true, browserName=chrome, javascriptEnabled=true, platform=ANY}]]
+21:35:52.366 INFO - Executing: [get: http://localhost:3000])
+21:35:52.766 INFO - Done: [get: http://localhost:3000]
+21:35:52.770 INFO - Executing: [find element: By.cssSelector: .todo-input])
+21:35:52.807 INFO - Done: [find element: By.cssSelector: .todo-input]
+21:35:52.811 INFO - Executing: [send keys: 0 [[ChromeDriver: chrome on LINUX (c8782f80a7bf24f856dbc72e836a7935)] -> css selector: .todo-input], [G, e, t,  , b, e, t, t, e, r,  , a, t,  , t, e, s, t, i, n, g]])
+21:35:53.063 INFO - Done: [send keys: 0 [[ChromeDriver: chrome on LINUX (c8782f80a7bf24f856dbc72e836a7935)] -> css selector: .todo-input], [G, e, t,  , b, e, t, t, e, r,  , a, t,  , t, e, s, t, i, n, g]]
+21:35:53.067 INFO - Executing: [find element: By.cssSelector: form.todo-form])
+21:35:53.099 INFO - Done: [find element: By.cssSelector: form.todo-form]
+21:35:53.103 INFO - Executing: [submit: 1 [[ChromeDriver: chrome on LINUX (c8782f80a7bf24f856dbc72e836a7935)] -> css selector: form.todo-form]])
+21:35:53.129 INFO - Done: [submit: 1 [[ChromeDriver: chrome on LINUX (c8782f80a7bf24f856dbc72e836a7935)] -> css selector: form.todo-form]]
+21:35:53.638 INFO - Executing: [find element: By.cssSelector: .todo-delete])
+21:35:53.671 INFO - Done: [find element: By.cssSelector: .todo-delete]
+21:35:53.674 INFO - Executing: [click: 2 [[ChromeDriver: chrome on LINUX (c8782f80a7bf24f856dbc72e836a7935)] -> css selector: .todo-delete]])
+21:35:53.759 INFO - Done: [click: 2 [[ChromeDriver: chrome on LINUX (c8782f80a7bf24f856dbc72e836a7935)] -> css selector: .todo-delete]]
+21:35:54.268 INFO - Executing: [find elements: By.cssSelector: .todo-undelete])
+21:35:54.299 INFO - Done: [find elements: By.cssSelector: .todo-undelete]
+21:35:54.303 INFO - Executing: [is enabled: 3 [[ChromeDriver: chrome on LINUX (c8782f80a7bf24f856dbc72e836a7935)] -> css selector: .todo-undelete]])
+21:35:54.325 INFO - Done: [is enabled: 3 [[ChromeDriver: chrome on LINUX (c8782f80a7bf24f856dbc72e836a7935)] -> css selector: .todo-undelete]]
+21:35:54.331 INFO - Executing: [delete session: 1c85b6fd-3834-40e1-88eb-b4daa213a60e])
+21:35:54.404 INFO - Done: [delete session: 1c85b6fd-3834-40e1-88eb-b4daa213a60e]

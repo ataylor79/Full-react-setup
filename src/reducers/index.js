@@ -8,7 +8,6 @@ export const initialState = {
 };
 
 export const reducer = (state = initialState, action) => {
-	console.log('ACTION:', action); //eslint-disable-line
 	switch(action.type) {
 
 	case types.LOAD_TODOS:

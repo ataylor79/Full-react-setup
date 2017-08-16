@@ -11,6 +11,7 @@ it('renders without crashing', () => {
 	const component = shallow(
 		<App 
 			state={initialState}
+			loadTodos={mockFunction}
 			submitTodo={mockFunction}
 			deleteTodo={mockFunction}
 			undeleteTodo={mockFunction}
@@ -18,6 +19,7 @@ it('renders without crashing', () => {
 			disabledAddTodo={mockBool}
 			disabledUndoDelete={mockBool}
 			todos={[]}
+			deleted={[]}
 		/>
 	);
 	

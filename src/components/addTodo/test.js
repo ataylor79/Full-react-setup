@@ -18,7 +18,8 @@ describe('AddTodo component', () => {
 			undeleteTodo={undeleteMock}
 			inputChanged={inputMock} 
 			disabledAddTodo={disabled}
-			disabledUndoDelete={disabled} />);
+			disabledUndoDelete={disabled}
+			deleted={[]} />);
 	});
 
 	it('should render correctly', () => expect(component.exists()).toEqual(true));
@@ -35,7 +36,8 @@ describe('AddTodo component', () => {
 				undeleteTodo={undeleteMock}
 				inputChanged={inputMock} 
 				disabledAddTodo={disabled}
-				disabledUndoDelete={disabled} />);
+				disabledUndoDelete={disabled}
+				deleted={[]} />);
 
 			expect(submitMock.mock.calls.length).toEqual(0);
 			component.find('form').simulate('submit');
@@ -48,7 +50,8 @@ describe('AddTodo component', () => {
 				undeleteTodo={undeleteMock}
 				inputChanged={inputMock} 
 				disabledAddTodo={enabled}
-				disabledUndoDelete={disabled} />);
+				disabledUndoDelete={disabled}
+				deleted={[]} />);
 
 			expect(submitMock.mock.calls.length).toEqual(0);
 			component.find('form').simulate('submit');
@@ -66,7 +69,8 @@ describe('AddTodo component', () => {
 				undeleteTodo={undeleteMock}
 				inputChanged={inputMock} 
 				disabledAddTodo={disabled}
-				disabledUndoDelete={disabled} />);
+				disabledUndoDelete={disabled}
+				deleted={[]} />);
 
 			expect(undeleteMock.mock.calls.length).toEqual(0);
 			component.find('.todo-undelete').simulate('click');
@@ -80,7 +84,11 @@ describe('AddTodo component', () => {
 				undeleteTodo={undeleteMock}
 				inputChanged={inputMock} 
 				disabledAddTodo={disabled}
-				disabledUndoDelete={enabled} />);
+				disabledUndoDelete={enabled}
+				deleted={[{
+					id: '1',
+					name: 'A todo'
+				}]} />);
 
 			expect(undeleteMock.mock.calls.length).toEqual(0);
 			component.find('.todo-undelete').simulate('click');
